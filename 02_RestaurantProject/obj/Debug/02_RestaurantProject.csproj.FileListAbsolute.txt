@@ -1,0 +1,7 @@
+C:\Users\OZCAN\source\repos\CsharpOgrenimSureci\02_RestaurantProject\bin\Debug\02_RestaurantProject.exe.config
+C:\Users\OZCAN\source\repos\CsharpOgrenimSureci\02_RestaurantProject\bin\Debug\02_RestaurantProject.exe
+C:\Users\OZCAN\source\repos\CsharpOgrenimSureci\02_RestaurantProject\bin\Debug\02_RestaurantProject.pdb
+C:\Users\OZCAN\source\repos\CsharpOgrenimSureci\02_RestaurantProject\obj\Debug\02_RestaurantProject.csproj.AssemblyReference.cache
+C:\Users\OZCAN\source\repos\CsharpOgrenimSureci\02_RestaurantProject\obj\Debug\02_RestaurantProject.csproj.CoreCompileInputs.cache
+C:\Users\OZCAN\source\repos\CsharpOgrenimSureci\02_RestaurantProject\obj\Debug\02_RestaurantProject.exe
+C:\Users\OZCAN\source\repos\CsharpOgrenimSureci\02_RestaurantProject\obj\Debug\02_RestaurantProject.pdb
