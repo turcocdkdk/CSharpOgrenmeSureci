@@ -46,10 +46,19 @@ namespace _02_RestaurantProject
                         }
                         Console.Write("Sipariş vermek istediğiniz yiyeceğin numarasını yazın;");
                         int fooddec  = int.Parse(Console.ReadLine());
-                        orders.Add(foodprices[fooddec]);
-                        orderedFoodNames.Add(foods[fooddec]);
-                        Console.WriteLine($"{foods[fooddec]}-{foodprices[fooddec]}TL- Siparişiniz başarı ile eklendi!");
-                        break;
+                        if(fooddec >= 0 && fooddec < foods.Length)
+                        {
+                            orders.Add(foodprices[fooddec]);
+                            orderedFoodNames.Add(foods[fooddec]);
+                            Console.WriteLine($"{foods[fooddec]}-{foodprices[fooddec]}TL- Siparişiniz başarı ile eklendi!");
+                            break;
+                        }
+                        else
+                        {
+                            Console.WriteLine("Hata, lütfen tekrar deneyin.");
+                            break;
+                        }
+
                     case "2":
                         for(int i = 0; i<drinks.Length;i++)
                         {
@@ -57,10 +66,18 @@ namespace _02_RestaurantProject
                         }
                         Console.Write("Sipariş vermek istediğiniz içeceğin numarasını yazın;");
                         int drinkdec = int.Parse(Console.ReadLine());
-                        orders.Add(drinkprices[drinkdec]);
-                        orderedFoodNames.Add(drinks[drinkdec]);
-                        Console.WriteLine($"{drinks[drinkdec]}-{drinkprices[drinkdec]}TL- Siparişiniz başarı ile eklendi!");
-                        break;
+                        if(drinkdec>=0 && drinkdec < drinks.Length)
+                        {
+                            orders.Add(drinkprices[drinkdec]);
+                            orderedFoodNames.Add(drinks[drinkdec]);
+                            Console.WriteLine($"{drinks[drinkdec]}-{drinkprices[drinkdec]}TL- Siparişiniz başarı ile eklendi!");
+                            break;
+                        }
+                        else
+                        {
+                            Console.WriteLine("Hata, lütfen tekrar deneyin.");
+                            break;
+                        }
                     case "3":
                         for(int i = 0; i<desserts.Length; i++)
                         {
@@ -68,21 +85,29 @@ namespace _02_RestaurantProject
                         }
                         Console.Write("Sipariş vermek istediğiniz tatlının numarasını yazın;");
                         int dessertdec = int.Parse(Console.ReadLine());
-                        orders.Add(dessertprices[dessertdec]);
-                        orderedFoodNames.Add(desserts[dessertdec]);
-                        Console.WriteLine($"{desserts[dessertdec]}-{dessertprices[dessertdec]}Siparişiniz başarı ile eklendi!");
-                        break;
+                        if(dessertdec >= 0 && dessertdec < desserts.Length)
+                        {
+                            orders.Add(dessertprices[dessertdec]);
+                            orderedFoodNames.Add(desserts[dessertdec]);
+                            Console.WriteLine($"{desserts[dessertdec]}-{dessertprices[dessertdec]}Siparişiniz başarı ile eklendi!");
+                            break;
+                        }
+                        else
+                        {
+                            Console.WriteLine("Hata, lütfen tekrar deneyin");
+                            break;
+                        }
+                        
                     case "4":
                         Console.WriteLine("Yeniden bekleriz!");
                         loopContiuning = false;
                         break;
                     case "5":
                         int hesap = 0;
-                        foreach(string food in orderedFoodNames)
+                        for(int i = 0; i < orderedFoodNames.Count; i++)
                         {
-                            Console.WriteLine($"-{food}");
-
-                        }
+                            Console.WriteLine($"{orderedFoodNames[i]}-{orders[i]}TL");
+                        })
                         foreach (int totalcheck in orders)
                         {
                           hesap += totalcheck;
