@@ -4,4 +4,6 @@
   </Folder>
   <Project Path="01_MainSubjects/01_MainSubjects.csproj" Id="15249b57-405c-4e7d-9170-5a4e887cb535" />
   <Project Path="02_RestaurantProject/02_RestaurantProject.csproj" Id="90ff31bf-9de1-46c9-b242-19b7382df94f" />
+  <Project Path="03_Methods/03_Methods.csproj" Id="9e43b33f-c256-4901-872c-52542d3bf687" />
+  <Project Path="BuffSystem/BuffSystem.csproj" Id="bdf561f8-f306-4e2e-ba63-a3897a9131de" />
 </Solution>

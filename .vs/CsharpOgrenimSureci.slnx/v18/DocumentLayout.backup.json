@@ -3,11 +3,15 @@
   "WorkspaceRootPath": "C:\\Users\\OZCAN\\source\\repos\\CsharpOgrenimSureci\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{90FF31BF-9DE1-46C9-B242-19B7382DF94F}|02_RestaurantProject\\02_RestaurantProject.csproj|c:\\users\\ozcan\\source\\repos\\csharpogrenimsureci\\02_restaurantproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BDF561F8-F306-4E2E-BA63-A3897A9131DE}|BuffSystem\\BuffSystem.csproj|c:\\users\\ozcan\\source\\repos\\csharpogrenimsureci\\buffsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BDF561F8-F306-4E2E-BA63-A3897A9131DE}|BuffSystem\\BuffSystem.csproj|solutionrelative:buffsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90FF31BF-9DE1-46C9-B242-19B7382DF94F}|02_RestaurantProject\\02_RestaurantProject.csproj|C:\\Users\\OZCAN\\source\\repos\\CsharpOgrenimSureci\\02_restaurantproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{90FF31BF-9DE1-46C9-B242-19B7382DF94F}|02_RestaurantProject\\02_RestaurantProject.csproj|solutionrelative:02_restaurantproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{15249B57-405C-4E7D-9170-5A4E887CB535}|01_MainSubjects\\01_MainSubjects.csproj|c:\\users\\ozcan\\source\\repos\\csharpogrenimsureci\\01_mainsubjects\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{15249B57-405C-4E7D-9170-5A4E887CB535}|01_MainSubjects\\01_MainSubjects.csproj|C:\\Users\\OZCAN\\source\\repos\\CsharpOgrenimSureci\\01_mainsubjects\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{15249B57-405C-4E7D-9170-5A4E887CB535}|01_MainSubjects\\01_MainSubjects.csproj|solutionrelative:01_mainsubjects\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -22,37 +26,48 @@
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{c6f34f0d-7ae5-4f3a-be61-fe0c21ae9eb8}"
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\OZCAN\\source\\repos\\CsharpOgrenimSureci\\02_RestaurantProject\\Program.cs",
-              "RelativeDocumentMoniker": "02_RestaurantProject\\Program.cs",
-              "ToolTip": "C:\\Users\\OZCAN\\source\\repos\\CsharpOgrenimSureci\\02_RestaurantProject\\Program.cs",
-              "RelativeToolTip": "02_RestaurantProject\\Program.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAgwBUAAAAAAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\OZCAN\\source\\repos\\CsharpOgrenimSureci\\BuffSystem\\Program.cs",
+              "RelativeDocumentMoniker": "BuffSystem\\Program.cs",
+              "ToolTip": "C:\\Users\\OZCAN\\source\\repos\\CsharpOgrenimSureci\\BuffSystem\\Program.cs",
+              "RelativeToolTip": "BuffSystem\\Program.cs",
+              "ViewState": "AgIAAO8AAAAAAAAAAAAAwPwAAABWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-15T19:25:06.985Z",
+              "WhenOpened": "2026-08-24T08:04:05.506Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\OZCAN\\source\\repos\\CsharpOgrenimSureci\\02_RestaurantProject\\Program.cs",
+              "RelativeDocumentMoniker": "02_RestaurantProject\\Program.cs",
+              "ToolTip": "C:\\Users\\OZCAN\\source\\repos\\CsharpOgrenimSureci\\02_RestaurantProject\\Program.cs",
+              "RelativeToolTip": "02_RestaurantProject\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFoAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-15T19:25:06.985Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\OZCAN\\source\\repos\\CsharpOgrenimSureci\\01_MainSubjects\\Program.cs",
               "RelativeDocumentMoniker": "01_MainSubjects\\Program.cs",
               "ToolTip": "C:\\Users\\OZCAN\\source\\repos\\CsharpOgrenimSureci\\01_MainSubjects\\Program.cs",
               "RelativeToolTip": "01_MainSubjects\\Program.cs",
-              "ViewState": "AgIAAG8AAAAAAAAAAAAAAH8AAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAAIkAAAAAAAAAAAAmwH8AAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-14T11:47:22.8Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-14T11:47:22.8Z"
             }
           ]
         }
