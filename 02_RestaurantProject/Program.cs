@@ -107,7 +107,7 @@ namespace _02_RestaurantProject
                         for(int i = 0; i < orderedFoodNames.Count; i++)
                         {
                             Console.WriteLine($"{orderedFoodNames[i]}-{orders[i]}TL");
-                        })
+                        }
                         foreach (int totalcheck in orders)
                         {
                           hesap += totalcheck;

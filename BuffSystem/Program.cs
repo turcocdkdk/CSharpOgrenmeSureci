@@ -110,12 +110,67 @@ namespace BuffSystem
             public void kendinitanit()
             {
                 Console.WriteLine($"Buff Adı: {BuffName}");
-                Console.WriteLine($"Buff Kalp Hızı Etkisi: {Buff_speed}");
-                Console.WriteLine($"Buff Kalp Sağ Taraf Ağırlığı Etkisi: {Buff_rightSideWeight}");
-                Console.WriteLine($"Buff Kalp Sol Taraf Ağırlığı Etkisi : {Buff_leftSideWeight}");
-                Console.WriteLine($"Buff Ritim Düzenliliği Etkisi: {Buff_rythmRegularless}");
-                Console.WriteLine($"Buff Kan Basıncı Etkisi: {Buff_bloodPressure}");
+                Console.Write($"Buff Kalp Hızı Etkisi:");
+               if( Buff_speed > 0)
+               {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine($"+{Buff_speed}");
+               }
+              else
+              {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine($"{Buff_speed}");
+              }
+               Console.ResetColor();
+               Console.Write($"Buff Kalp Sağ Taraf Ağırlığı Etkisi:");
+             if( Buff_rightSideWeight > 0)
+               {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine($"+{Buff_rightSideWeight}");
+               }
+              else
+              {
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine($"{Buff_rightSideWeight}");
+              }
+               Console.ResetColor();
+               Console.Write($"Buff Kalp Sol Taraf Ağırlığı Etkisi :");
+               if ( Buff_leftSideWeight > 0)
+              {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine($"+ {Buff_leftSideWeight}");
+              }
+            else
+            {
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine($" {Buff_leftSideWeight}");
             }
+            Console.ResetColor();
+            Console.Write($"Buff Ritim Düzenliliği Etkisi:");
+            if(Buff_rythmRegularless > 0)
+            {
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine($"+{Buff_rythmRegularless}");
+            }
+            else
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine($"{Buff_rythmRegularless}");
+            }
+            Console.ResetColor();
+            Console.Write($"Buff Kan Basıncı Etkisi:");
+            if (Buff_bloodPressure > 0)
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine($"+{Buff_bloodPressure}");
+            }
+            else
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine($"{Buff_bloodPressure}");
+            }
+            Console.ResetColor();
+        }
         }
     }
     internal class Program
@@ -140,7 +195,8 @@ namespace BuffSystem
                 Console.WriteLine("1-Tüm Bufflara bak");
                 Console.WriteLine("2-Buff Oluştur ");
                 Console.WriteLine("3- Tüm oluşturduğun buffların toplamının kalbe etkisini gör ");
-                Console.WriteLine("4- Çıkış ");
+                Console.WriteLine("4- Buff sil ");
+                Console.WriteLine("5- Çıkış ");
                 Console.WriteLine($"------------------------------------------------------------------------");
 
                 int cevap = Getintvalue("Seçiminizi yapın: ");
@@ -185,6 +241,25 @@ namespace BuffSystem
                     break;
 
                 case 4:
+                    foreach (var buff in Buffs)
+                    {
+                        Console.WriteLine("INDEX: " + Buffs.IndexOf(buff));
+                        buff.kendinitanit();
+                        Console.WriteLine($"------------------------------------------------------------------------");
+                    }
+                    int silinecekBuffIndex = Getintvalue("Silmek istediğiniz Buffun indexini girin: ");
+                    if (silinecekBuffIndex >= 0 && silinecekBuffIndex < Buffs.Count)
+                    {
+                        Console.WriteLine(Buffs[silinecekBuffIndex].BuffName + " Buffu Silindi");
+                        Buffs.RemoveAt(silinecekBuffIndex);
+                   
+                    }
+                    else
+                    {
+                        Console.WriteLine("Geçersiz index");
+                    }
+                    break;
+                case 5:
                     loopcountinuing = false;
                     break;
             }
@@ -207,7 +282,6 @@ namespace BuffSystem
            
             Console.WriteLine("Buffun Adını Girin: ");
             string buffadi = Console.ReadLine();
-           Console.WriteLine("Buffun Kalp Hızı Etkisni girin;");
            int hiz = Getintvalue("Buffun Kalp Hızı Etkisni girin; ");
            int sag = Getintvalue("Buffun Kalp Sağ Taraf Ağırlığı Etkisini girin; ");
            int sol = Getintvalue("Buffun Kalp Sol Taraf Ağırlığı Etkisini girin; ");
